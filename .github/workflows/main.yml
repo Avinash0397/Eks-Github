@@ -74,9 +74,9 @@ jobs:
       - name: Terraform Apply
         if: ${{ github.event.inputs.action == 'apply' }}
         run: |
-          terraform apply -auto-approve -var-file=${{ github.event.inputs.tfvars_file }} -input=false
+          terraform apply -auto-approve -var-file=${{ github.event.inputs.tfvars_file }} -lock=false -input=false
 
       - name: Terraform Destroy
         if: ${{ github.event.inputs.action == 'destroy' }}
         run: |
-          terraform destroy -auto-approve -var-file=${{ github.event.inputs.tfvars_file }} -input=false
+          terraform destroy -auto-approve -var-file=${{ github.event.inputs.tfvars_file }}  -lock=false-input=false
