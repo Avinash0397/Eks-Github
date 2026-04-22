@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tfvars_file:
-        description: 'Path to  .tfvars file'
+        description: 'Path to the  .tfvars file'
         required: true
         default: 'dev.tfvars'
       action:
