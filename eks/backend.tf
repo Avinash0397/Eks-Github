@@ -18,8 +18,3 @@ terraform {
 provider "aws" {
   region = var.aws-region
 }
-provider "helm" {
-  kubernetes {
-    config_path = "~/.kube/config"
-  }
-}
