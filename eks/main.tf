@@ -40,5 +40,4 @@ module "eks" {
   endpoint-private-access       = var.endpoint-private-access
   endpoint-public-access        = var.endpoint-public-access
 
-  
-}
+  }
